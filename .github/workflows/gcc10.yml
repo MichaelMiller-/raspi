@@ -22,7 +22,7 @@ jobs:
 
     - name: Install Compiler
       run: |
-        sudo apt install gcc-10
+        sudo apt install g++-10
 
     - name: Create Build Environment
       run: cmake -E make_directory ${{runner.workspace}}/build
