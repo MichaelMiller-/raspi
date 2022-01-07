@@ -31,8 +31,7 @@ jobs:
       shell: bash
       working-directory: ${{runner.workspace}}/build
       run: |
-        export CC=gcc-10
-        export CXX=gcc-10
+        export CXX=g++-10
         cmake $GITHUB_WORKSPACE -DCMAKE_BUILD_TYPE=${{matrix.config}}
 
     - name: Build
