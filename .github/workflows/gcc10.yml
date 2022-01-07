@@ -2,11 +2,9 @@ name: GCC 10.3
 
 on:
   push:
-    branches:
-      - master
+    branches: [ main ]
   pull_request:
-    branches:
-      - master
+    branches: [ main ]
 
 env:
   CTEST_OUTPUT_ON_FAILURE: 1
