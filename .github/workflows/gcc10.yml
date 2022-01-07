@@ -23,6 +23,7 @@ jobs:
     - name: Install Compiler
       run: |
         sudo apt install g++-10
+        export CXX=g++-10
 
     - name: Create Build Environment
       run: cmake -E make_directory ${{runner.workspace}}/build
@@ -30,9 +31,7 @@ jobs:
     - name: Configure CMake
       shell: bash
       working-directory: ${{runner.workspace}}/build
-      run: |
-        export CXX=g++-10
-        cmake $GITHUB_WORKSPACE -DCMAKE_BUILD_TYPE=${{matrix.config}}
+      run: cmake $GITHUB_WORKSPACE -DCMAKE_BUILD_TYPE=${{matrix.config}}
 
     - name: Build
       working-directory: ${{runner.workspace}}/build
