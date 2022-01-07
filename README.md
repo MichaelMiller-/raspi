@@ -1,3 +1,7 @@
+[![GCC 10.3](https://github.com/MichaelMiller-/raspi/actions/workflows/gcc10.yml/badge.svg)](https://github.com/MichaelMiller-/raspi/actions/workflows/gcc10.yml) [![GCC 11.0](https://github.com/MichaelMiller-/raspi/actions/workflows/gcc11.yml/badge.svg)](https://github.com/MichaelMiller-/raspi/actions/workflows/gcc11.yml)
+
+[![Clang 10.0](https://github.com/MichaelMiller-/raspi/actions/workflows/clang10.yml/badge.svg)](https://github.com/MichaelMiller-/raspi/actions/workflows/clang10.yml)
+
 # raspi
 raspi is an easy to use header-only library to control the [GPIO pins](https://www.raspberrypi.com/documentation/computers/os.html#gpio-and-the-40-pin-header) of the RaspberryPi.
 Each [RaspberryPI](https://www.raspberrypi.org/) model can easily be specified via template parameters and, if necessary, adapted with its own classes.
